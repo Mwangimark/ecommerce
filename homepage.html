@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        .popup-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 300px; /* Adjust the maximum width as desired */
+      text-align: center;
+    }
+
+    .product-image {
+      max-width: 100%; /* Adjust the maximum width of the image as desired */
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+        .popup-content h2 {
+            margin-top: 0;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="LOGO">
+            </div>
+
+            <div class="bar">
+                <input type="text" style="margin-right: 20px;">Search
+            </div>
+
+            <div class="nav_bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Category</a>
+                        <div class="dropdown-content">
+                            <a href="mens.html">Mens</a>
+                            <a href="womens.html">Womens</a>
+                            <a href="Jewellery.html">Jewellery</a>
+                            <a href="electronics.html">Electronics</a>
+                        </div>
+                    </li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <img src="images/cart.jpg" alt="">
+        <span>0</span>
+    </div>
+
+    <div id="products">
+        <!-- <div class="card">
+            <h3 class="category">Title</h3>
+            <img src="" alt="image" class="image">
+            <h5 class="description">Description</h5>
+            <h4 class="price">Price</h4>
+            <button class="add-cart">Add Cart</button>
+        </div>  -->
+    </div>
+
+    <script src="homepage.js"></script>
+</body>
+
+</html>

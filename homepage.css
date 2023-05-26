@@ -1,0 +1,227 @@
+
+body{
+    width: 100%;
+    background-color: rgb(53, 175, 175);
+
+}
+.container{
+    margin: auto;
+    width: 90%;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.nav_bar ul {
+    display: flex;
+}
+
+.nav_bar ul li {
+    padding: 30px;
+    list-style-type: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    margin-top: 70px;
+}
+.desc button{
+    background-color: brown;
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 150px;
+}
+.img-content img{
+    margin-top: 70px;
+    width: 500px;
+    height: 300px;
+}
+.bar{
+    margin-top: 60px;
+    margin-left: 90px;
+}
+
+.bar input{
+    height: 30px;
+    width: 250px;
+    border-radius: 40px;
+    margin-bottom: 0px
+    
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: white;
+    width: 90%;
+    margin: 50px auto;
+    height: auto;
+}
+
+#products .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+#products .card:hover {
+    transform: scale(1.1);
+}
+
+#products .card.clicked {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    z-index: 9999;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid grey;
+    background-color: aqua;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+.card h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card img{
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: auto;
+}
+.card h5{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .card h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .card button{
+    width: 80px;
+    min-height: 30px;
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 130px;
+  }
+
+
+  .cart img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 130px;
+    border-radius: 5px;
+  }
+  .cart span{
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-right: -40px;
+    border-radius: 30px;
+  }
+
+
+/* ================cart page ================== */
+.product-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    margin: 0 auto;
+    border-bottom:  4px solid lightgrey;
+}
+.product-title{
+    width: 45%;
+}
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+
+}
+
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom:  1px solid lightgrey;
+}
